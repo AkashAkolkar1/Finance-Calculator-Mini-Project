@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Loan.css">
+        <title>Loan</title>
+</head>
+
+<body>
+    <header>  
+        <div class="heading">
+           <div class="top-left">
+            <h1 class="comp-name">AOAO</h1>
+            <img class="top-right-img home-img" src="../assets/home-agreement.png" alt="home">
+             <div class="dropdown">
+              <img class="top-right-img calculator-img dropdn" src="../assets/profit.png">
+              <div class="dropdown-content">
+               <a href="./SIP/SIP.html">S.I.P</a>
+               <a href="./FD/FD.html">F.D</a>
+               <a href="#">Loan</a>
+              </div>
+             </div>
+           </div>
+          <ul class="top-right">
+            <li><a class="signup" href="http://localhost/login/index.php">Sign up</a></li>
+            <li><a class="login" href="http://localhost/login/index.php">Login</a></li>
+          </ul>
+        </div>
+    </header>    
+
+ <div class="container">
+         <fieldset class="fieldset-one">
+                 <legend>Loan amount</legend>
+                 <span>₹</span>
+                 <input type="number" class="loan-amount-input" placeholder="0">
+         </fieldset>
+
+         <fieldset class="fieldset-two">
+                 <legend>Loan term</legend>
+                 <span>Years</span>
+                 <input type="number" class="loan-term-input" placeholder="0">
+         </fieldset>
+
+         <fieldset class="fieldset-three">
+                 <legend>Interest rate</legend>
+                 <span>%</span>
+                 <input type="number" class="interest-rate-input" placeholder="0">
+         </fieldset>
+         <button class="calculate-btn">Calculate</button>
+         <div class="result">
+                 <table>
+                         <tr>
+                                 <td>Loan amount</td>
+                                 <td class="loan-amount"></td>
+                         </tr>
+
+                         <tr>
+                                 <td>Monthly EMI</td>
+                                 <td class="monthly-emi"></td>
+                         </tr>
+
+                         <tr>
+                                 <td>Interest Payable</td>
+                                 <td class="interest-payable"></td>
+                         </tr>
+
+                         <tr>
+                                 <td>Total Payable</td>
+                                 <td class="total-payable"></td>
+                         </tr>
+                 </table>
+         </div>
+ </div>
+
+<footer> 
+    <div class="footer-content">
+     <h3 style="margin: 0px;">contact us -</h3>
+     <div>
+     <p class="footer-text">Email Id:</p>
+     <p class="footer-text" style="color: dimgray;">AOAO@gmail.com</p></div>
+     <div>
+     <p class="footer-text">Address:</p>
+     <p class="footer-text address"style="color: dimgray;"> Dr. K. M. Vasudevan Pillai Campus, <br>
+      Plot No. 10, Sector 16, New Panvel East, <br>
+      Panvel, Navi Mumbai, Maharashtra <br>
+      410206</p></div>
+    </div>
+    <div class="ending-terms">
+      <a href="#" class="fbn">Terms & conditions</a>
+      <a href="#" class="fbn">About us</a>
+      <a href="#" class="fbn">Privacy policy</a>
+      <a href="#" class="fbn">Cookies policy</a>
+    </div>
+</footer>
+<script src="Loan.js"></script>
+</body>
+
+</html>
